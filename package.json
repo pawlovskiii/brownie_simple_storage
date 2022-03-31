@@ -1,0 +1,23 @@
+{
+  "name": "brownie_simple_storage",
+  "version": "1.0.0",
+  "description": "- [General info](#general-info)\r - [Learned experience during the project](#learned-experience-during-the-project)\r   - [Brownie vs Web3](#brownie-vs-web3)\r - [Setup](#setup)\r   - [Additional file for environment variables](#additional-file-for-environment-variables)\r   - [Installing dependencies](#installing-dependencies)\r   - [Available commands for the project](#available-commands-for-the-project)",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pawlovskiii/brownie_simple_storage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pawlovskiii/brownie_simple_storage/issues"
+  },
+  "homepage": "https://github.com/pawlovskiii/brownie_simple_storage#readme"
+}
