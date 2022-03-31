@@ -33,7 +33,7 @@ These are crucial brownie commands to work with any project. I'll provide a litt
 
 #### brownie init
 
-To create a sample folder with everything we need with brownie
+To create a sample folder with everything we need with the brownie. We should only use this command once per project.
 
 ```bash
 $ brownie init
