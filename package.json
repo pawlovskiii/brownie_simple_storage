@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/pawlovskiii/brownie_simple_storage/issues"
   },
-  "homepage": "https://github.com/pawlovskiii/brownie_simple_storage#readme"
+  "homepage": "https://github.com/pawlovskiii/brownie_simple_storage#readme",
+  "devDependencies": {
+    "prettier-plugin-solidity": "^1.0.0-beta.19"
+  }
 }
