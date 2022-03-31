@@ -89,21 +89,45 @@ $ brownie test -s
 
 ```
 
-### Other useful Brownie commands
+### Explained Brownie commands that are available to use within the project
+
+#### brownie init
+To create a sample folder with everything we need with brownie
 
 ```bash
-# to create a sample folder with everything we need with Brownie
 $ brownie init
+```
 
+#### brownie compile
+As opposed to the web3.py. In brownie, we can compile our code without having to write our compiler. We can simply compile all the contracts that are in our **/contracts** folder within our project.
+
+   - Brownie will automatically read the version of solidity and then store all of the compiled information in **build/contracts** folder.
+
+     Here we got **SimpleStorage.json** and there's a lot of familiar pieces
+
+     - **ABI**
+     - **opcodes** section which is the low-level language
+
+```bash
 $ brownie compile
+```
 
+```bash
 $ brownie accounts list
+```
 
+```bash
 $ brownie networks list
+```
 
+```bash
 $ brownie console
+```
 
+```bash
 $ brownie test
+```
 
+```bash
 $ brownie pm list
 ```
