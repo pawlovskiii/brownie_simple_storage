@@ -5,6 +5,9 @@
 - [General info](#general-info)
 - [Learned experience during the project](#learned-experience-during-the-project)
   - [Brownie vs Web3](#brownie-vs-web3)
+  - [Explained brownie commands](#explained-brownie-commands)
+    - [brownie init](#brownie-init)
+    - [brownie compile](#brownie-compile)
 - [Setup](#setup)
   - [Additional file for environment variables](#additional-file-for-environment-variables)
   - [Installing dependencies](#installing-dependencies)
@@ -23,6 +26,51 @@ The project is about making the first steps into Brownie, one of the most popula
 - Brownie also makes a great testing environment.
 
 All in all, it was crucial to work with Web3.py, to experience the low-level stuff that Brownie does for us.
+
+### Explained brownie commands
+
+#### brownie init
+
+To create a sample folder with everything we need with brownie
+
+```bash
+$ brownie init
+```
+
+#### brownie compile
+
+As opposed to the web3.py. In brownie, we can compile our code without having to write our compiler. We can simply compile all the contracts that are in our **/contracts** folder within our project.
+
+- Brownie will automatically read the version of solidity and then store all of the compiled information in **build/contracts** folder.
+
+  Here we got **SimpleStorage.json** and there's a lot of familiar pieces
+
+  - **ABI**
+  - **opcodes** section which is the low-level language
+
+```bash
+$ brownie compile
+```
+
+```bash
+$ brownie accounts list
+```
+
+```bash
+$ brownie networks list
+```
+
+```bash
+$ brownie console
+```
+
+```bash
+$ brownie test
+```
+
+```bash
+$ brownie pm list
+```
 
 ## Setup
 
@@ -87,47 +135,4 @@ $ brownie test —pdb
 
 $ brownie test -s
 
-```
-
-### Explained Brownie commands that are available to use within the project
-
-#### brownie init
-To create a sample folder with everything we need with brownie
-
-```bash
-$ brownie init
-```
-
-#### brownie compile
-As opposed to the web3.py. In brownie, we can compile our code without having to write our compiler. We can simply compile all the contracts that are in our **/contracts** folder within our project.
-
-   - Brownie will automatically read the version of solidity and then store all of the compiled information in **build/contracts** folder.
-
-     Here we got **SimpleStorage.json** and there's a lot of familiar pieces
-
-     - **ABI**
-     - **opcodes** section which is the low-level language
-
-```bash
-$ brownie compile
-```
-
-```bash
-$ brownie accounts list
-```
-
-```bash
-$ brownie networks list
-```
-
-```bash
-$ brownie console
-```
-
-```bash
-$ brownie test
-```
-
-```bash
-$ brownie pm list
 ```
