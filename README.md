@@ -29,6 +29,8 @@ All in all, it was crucial to work with Web3.py, to experience the low-level stu
 
 ### Explained brownie commands
 
+These are crucial brownie commands to work with any project. I'll provide a little introduction to each one provided.
+
 #### brownie init
 
 To create a sample folder with everything we need with brownie
