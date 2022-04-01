@@ -5,6 +5,7 @@
 - [General info](#general-info)
 - [Learned experience during the project](#learned-experience-during-the-project)
   - [Brownie vs Web3](#brownie-vs-web3)
+  - [Brownie config for environment variables](#brownie-config-for-environment-variables)
   - [Explained brownie commands](#explained-brownie-commands)
     - [brownie init](#brownie-init)
     - [brownie compile](#brownie-compile)
