@@ -27,6 +27,23 @@ The project is about making the first steps into Brownie, one of the most popula
 
 All in all, it was crucial to work with Web3.py, to experience the low-level stuff that Brownie does for us.
 
+### Brownie config for environment variables
+
+Brownie has an additional feature that allows us to easily work with the environment variables.
+
+- **brownie-config.yaml** is a special file, that brownie always looks for to grab pieces of information like environmental variables, before running scripts. Later I'll explain more about the [env](#additional-file-for-environment-variables) file.
+
+  ```yaml
+  dotenv: .env
+  ```
+
+It's way better because now we have one canonical place where we're always going to pull our private key from.
+
+```yaml
+wallets:
+  from_key: ${PRIVATE_KEY}
+```
+
 ### Explained brownie commands
 
 These are crucial brownie commands to work with any project. I'll provide a little introduction to each one provided.
