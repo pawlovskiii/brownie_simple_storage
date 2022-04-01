@@ -45,6 +45,20 @@ wallets:
   from_key: ${PRIVATE_KEY}
 ```
 
+### Deploy to the development Ganache chain
+
+We could either make a **transaction** or a **call**. Brownie is smart enough to know, which one is going to be done.
+
+In this case, since we're deploying a contract and storing a number in it, we want to make a **state change**, so it's a **transaction**.
+
+```python
+def deploySimpleStorage():
+    account = get_account()
+    simple_storage = SimpleStorage.deploy({"from": account})
+    transaction = simple_storage.store(15, {"from": account})
+    transaction.wait(1)
+```
+
 ### Explained brownie commands
 
 These are crucial brownie commands to work with any project. I'll provide a little introduction to each one provided.
