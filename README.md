@@ -187,17 +187,24 @@ $ pip install eth-brownie
 
 ### Available commands for the project
 
-Brownie will spin up a local ganache chain by default to deploy to. It defaults always working with a local **ganache-cli** blockchain.
+1. The crucial step in order to do any action with the contracts
 
-```bash
-$ brownie run .\scripts\deploy.py
-```
+   ```bash
+   $ brownie compile
+   ```
 
-```bash
-$ brownie test -k test_deploy
+2. Brownie will spin up a local ganache chain by default to deploy to. It defaults always working with a local **ganache-cli** blockchain.
 
-$ brownie test —pdb
+   ```bash
+   $ brownie run .\scripts\deploy.py
+   ```
 
-$ brownie test -s
+3. Brownie testing variations command.
 
-```
+   ```bash
+   # testing all the functions
+   $ brownie test
+
+   # single function testing
+   $ brownie test -k test_deploy
+   ```
