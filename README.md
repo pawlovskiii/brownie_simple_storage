@@ -13,7 +13,7 @@
 - [Setup](#setup)
   - [Additional file for environment variables](#additional-file-for-environment-variables)
   - [Installing dependencies](#installing-dependencies)
-  - [Available commands for the project](#available-commands-for-the-project)
+  - [Recommended commands for use in the project](#recommended-commands-for-use-in-the-project)
 
 ## General info
 
@@ -185,9 +185,9 @@ $ pip install cython
 $ pip install eth-brownie
 ```
 
-### Available commands for the project
+### Recommended commands for use in the project
 
-1. The crucial step in order to do any action with the contracts
+1. The crucial step in order to do any action with the contracts.
 
    ```bash
    $ brownie compile
