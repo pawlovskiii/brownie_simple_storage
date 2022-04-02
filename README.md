@@ -107,6 +107,32 @@ $ brownie test
 $ brownie pm list
 ```
 
+### Contract testing
+
+We need to automate our contracts to make them do what we want. We don't always want to manually check that all of our stuff is doing what we want. We can do tests in Remix IDE, but it's way better to stick with Brownie/Python. It allows more customization, control, typical CI/CD pipelines, etc.
+
+Typically testing in **smart contracts** or testing really in anything is going to be separated into three categories:
+
+1. **Arrange** - set up all the pieces
+2. **Act** - in this case, deploy a smart contract
+3. **Assert** - set up the test case
+
+Always keep in mind that one testing function should only test one thing at a time.
+
+Here we're checking if the contract is correctly deployed with an initial value of 0.
+
+```python
+def test_deploy():
+    # Arrange
+    account = accounts[0]
+    # Act
+    simple_storage = SimpleStorage.deploy({"from": account})
+    starting_value = simple_storage.retrieve()
+    expected = 0
+    # Assert
+    assert starting_value == expected
+```
+
 ## Setup
 
 There are three different ways of working with this project and each way requires a different approach with certain things like changing public/private keys.
