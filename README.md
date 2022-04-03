@@ -111,6 +111,8 @@ $ brownie pm list
 
 We need to automate our contracts to make them do what we want. We don't always want to manually check that all of our stuff is doing what we want. We can do tests in Remix IDE, but it's way better to stick with Brownie/Python. It allows more customization, control, typical CI/CD pipelines, etc.
 
+Everything that you can do with the **brownie test** comes directly from **PyTest**. Pytest is a mature, feature-rich test framework. It lets you write small tests with minimal code, scales well for large projects, and is highly extendable.
+
 Typically testing in **smart contracts** or testing really in anything is going to be separated into three categories:
 
 1. **Arrange** - set up all the pieces
