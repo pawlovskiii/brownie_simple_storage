@@ -10,10 +10,11 @@
   - [Explained brownie commands](#explained-brownie-commands)
     - [brownie init](#brownie-init)
     - [brownie compile](#brownie-compile)
+  - [Contract testing](#contract-testing)
 - [Setup](#setup)
   - [Additional file for environment variables](#additional-file-for-environment-variables)
   - [Installing dependencies](#installing-dependencies)
-  - [Recommended commands for use in the project](#recommended-commands-for-use-in-the-project)
+  - [Recommended commands to use for the project](#recommended-commands-to-use-for-the-project)
 
 ## General info
 
@@ -187,7 +188,7 @@ $ pip install cython
 $ pip install eth-brownie
 ```
 
-### Recommended commands for use in the project
+### Recommended commands to use for the project
 
 1. The crucial step in order to do any action with the contracts.
 
