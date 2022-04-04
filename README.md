@@ -88,12 +88,29 @@ As opposed to the web3.py. In brownie, we can compile our code without having to
 $ brownie compile
 ```
 
-```bash
-$ brownie accounts list
-```
+#### brownie networks list
+
+Brownie comes pre-packaged with a list of networks, that it's already compatible with. You can see all the networks by running the below command.
+
+It's important to note that there's a difference between **Development** networks and the **Ethereum** networks.
+
+Development
+
+- Whenever we deploy to a network, we default to this **Development** network.
+- Any network under this section is going to be temporary.
+- These are networks such as the **Ganache-CLI**, that Brownie automatically spins up when we've run any of the scripts.
+
+Ethereum
+
+- Anything under the **Ethereum** section is going to keep track of everything in there because these are persistent networks.
+- Examples of networks are **Mainnet** or **Rinkeby**.
 
 ```bash
 $ brownie networks list
+```
+
+```bash
+$ brownie accounts list
 ```
 
 ```bash
