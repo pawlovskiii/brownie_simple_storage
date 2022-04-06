@@ -209,24 +209,36 @@ $ pip install eth-brownie
 
 ### Recommended commands to use for the project
 
-1. The crucial step in order to do any action with the contracts.
+The crucial step in order to do any action with the contracts.
 
-   ```bash
-   $ brownie compile
-   ```
+```bash
+$ brownie compile
+```
 
-2. Brownie will spin up a local ganache chain by default to deploy to. It defaults always working with a local **ganache-cli** blockchain.
+#### Deploying a contract via Ganache Local Chain
 
-   ```bash
-   $ brownie run .\scripts\deploy.py
-   ```
+```bash
+# without specific flags, it defaults to ganache-cli
+$ brownie run .\scripts\deploy.py
+```
 
-3. Brownie testing variations command.
+#### Deploying a contract via Rinkeby TestNet
 
-   ```bash
-   # testing all the functions
-   $ brownie test
+```bash
+$  brownie run .\scripts\deploy.py --network rinkeby
+```
 
-   # single function testing
-   $ brownie test -k test_deploy
-   ```
+```bash
+# checking values in a contract that we previously deployed
+$ brownie run .\scripts\read_value.py --network rinkeby
+```
+
+#### Brownie testing variations command.
+
+```bash
+# testing all the functions
+$ brownie test
+
+# single function testing
+$ brownie test -k test_deploy
+```
