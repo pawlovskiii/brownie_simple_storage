@@ -35,6 +35,28 @@ The project is about making the first steps into Brownie, one of the most popula
 
 All in all, it was crucial to work with Web3.py, to experience the low-level stuff that Brownie does for us.
 
+#### Deployment differences within Rinkeby TestNet
+
+- Web3.py
+
+  To deploy our contract to the Rinkeby, we needed to add our **HTTPProvider**, which was our [infura](https://infura.io/) account and several other things.
+
+  ```python
+  # for connecting to Rinkeby
+  w3 = Web3(Web3.HTTPProvider("https://rinkeby.infura.io/v3/7abda71ad2fa49b18ca946c72c6b558a"))
+  chain_id = 4
+  my_address = "0xD3E4842d2bD11E18E96Ad08D2Fd6264C66A5D52f"
+  private_key = os.getenv("PRIVATE_KEY")
+  ```
+
+- Brownie
+
+  No worries some doubts will be explained later.
+
+  - The process of compiling the contract is way smoother because brownie does this for us within a single command.
+  - We only need the **private key** in the **.env** file to sign and send transactions. Brownie will also find out our **public key** on its basis.
+  - Every time we deploy to a blockchain, the brownie will save that deployment so we can always go back and trace the situation. You'll see it at **build/deployments** new folder named 4 because chainID of Rinkeby is 4.
+
 ### Brownie config for environment variables
 
 Brownie has an additional feature that allows us to easily work with the environment variables.
