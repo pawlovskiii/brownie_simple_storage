@@ -111,10 +111,6 @@ Ethereum
 $ brownie networks list
 ```
 
-```bash
-$ brownie accounts list
-```
-
 #### brownie console
 
 It allows us to get into a shell where we can interact with our contracts. It's **ganache local chain**. This **brownie shell** is a Python shell with all of our smart contract features, already natively integrated and it's incredibly powerful. To exit type **quit()**
@@ -129,14 +125,6 @@ simple_storage = SimpleStorage.deploy({"from": account})
 simple_storage.retrieve() # 0
 transaction = simple_storage.store(15, {"from": account})
 simple_storage.retrieve() # 15
-```
-
-```bash
-$ brownie test
-```
-
-```bash
-$ brownie pm list
 ```
 
 ### Contract testing
