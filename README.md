@@ -17,6 +17,9 @@
   - [Additional file for environment variables](#additional-file-for-environment-variables)
   - [Installing dependencies](#installing-dependencies)
   - [Recommended commands to use for the project](#recommended-commands-to-use-for-the-project)
+    - [Deploying a contract via Ganache Local Chain](#deploying-a-contract-via-ganache-local-chain)
+    - [Deploying a contract via Rinkeby TestNet](#deploying-a-contract-via-rinkeby-testnet)
+    - [Brownie testing variations command](#brownie-testing-variations-command)
 
 ## General info
 
@@ -233,7 +236,7 @@ $  brownie run .\scripts\deploy.py --network rinkeby
 $ brownie run .\scripts\read_value.py --network rinkeby
 ```
 
-#### Brownie testing variations command.
+#### Brownie testing variations command
 
 ```bash
 # testing all the functions
