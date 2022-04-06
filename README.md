@@ -5,6 +5,7 @@
 - [General info](#general-info)
 - [Learned experience during the project](#learned-experience-during-the-project)
   - [Brownie vs Web3](#brownie-vs-web3)
+    - [Deployment differences within Rinkeby TestNet](#deployment-differences-within-rinkeby-testnet)
   - [Brownie config for environment variables](#brownie-config-for-environment-variables)
   - [Deploy to the development Ganache chain](#deploy-to-the-development-ganache-chain)
   - [Explained brownie commands](#explained-brownie-commands)
