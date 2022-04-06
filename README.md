@@ -11,6 +11,7 @@
     - [brownie init](#brownie-init)
     - [brownie compile](#brownie-compile)
     - [brownie networks list](#brownie-networks-list)
+    - [brownie console](#brownie-console)
   - [Contract testing](#contract-testing)
 - [Setup](#setup)
   - [Additional file for environment variables](#additional-file-for-environment-variables)
