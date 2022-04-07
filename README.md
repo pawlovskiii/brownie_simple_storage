@@ -75,7 +75,7 @@ wallets:
   from_key: ${PRIVATE_KEY}
 ```
 
-### Deploy to the development Ganache chain
+### Deploying the contract
 
 We could either make a **transaction** or a **call**. Brownie is smart enough to know, which one is going to be done.
 
@@ -87,6 +87,21 @@ def deploySimpleStorage():
     simple_storage = SimpleStorage.deploy({"from": account})
     transaction = simple_storage.store(15, {"from": account})
     transaction.wait(1)
+```
+
+#### Interacting with contracts deployed inside our brownie project
+
+This is only for the Rinkeby TestNet because it keeps track of all the contracts that we previously deployed.
+
+Whenever we work with a smart contract we need to know its **ABI** and its **contract address**. Well, brownie already knows what the address of this contract is. It's got it saved in the **/deployments** folder in the **map.json** file. It also knows what the **ABI** is because when we compile it, we get that big JSON file and one of the first inputs has the **ABI**. In our case it's **SimpleStorage.json** in the **/build/contracts** folder.
+
+Below we're checking the value of the number that we store in the **deploy.py** file. Every time we run the deploy file, a new contract is being created.
+
+```python
+def read_contracts():
+    # this object works the same as an array
+    simple_storage = SimpleStorage[-1]
+    print(simple_storage.retrieve())
 ```
 
 ### Explained brownie commands
