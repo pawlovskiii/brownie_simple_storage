@@ -139,18 +139,34 @@ $ brownie networks list
 
 #### brownie console
 
-It allows us to get into a shell where we can interact with our contracts. It's **ganache local chain**. This **brownie shell** is a Python shell with all of our smart contract features, already natively integrated and it's incredibly powerful. To exit type **quit()**
+It allows us to get into a shell where we can interact with our contracts. It's **ganache local chain**. This **brownie shell** is a Python shell with all of our smart contract features, already natively integrated and it's incredibly powerful.
 
 ```bash
 $ brownie console
 ```
 
+Possible commands to check within the console.
+
 ```python
-# Possible commands to test within the console
 simple_storage = SimpleStorage.deploy({"from": account})
+```
+
+```python
 simple_storage.retrieve() # 0
+```
+
+```python
 transaction = simple_storage.store(15, {"from": account})
+```
+
+```python
 simple_storage.retrieve() # 15
+```
+
+To exit from the console type the below command.
+
+```python
+quit()
 ```
 
 ### Contract testing
