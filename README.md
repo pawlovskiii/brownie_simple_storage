@@ -96,7 +96,7 @@ This is only for the Rinkeby TestNet because it keeps track of all the contracts
 
 Whenever we work with a smart contract we need to know its **ABI** and its **contract address**. Well, brownie already knows what the address of this contract is. It's got it saved in the **/deployments** folder in the **map.json** file. It also knows what the **ABI** is because when we compile it, we get that big JSON file and one of the first inputs has the **ABI**. In our case it's **SimpleStorage.json** in the **/build/contracts** folder.
 
-Below we're checking the value of the number that we store in the **deploy.py** file. Every time we run the deploy file, a new contract is being created. Since **SimpleStorage** acts like an array we can choose which deployed contract we want to call the **retrieve** function. Currently, it's set to the latest one, but it might be any other. Just go to the **map.json** file and choose index which you prefer. Remember to deploy a contract a few times if you want to choose from.
+Below we're checking the value of the number that we store in the **deploy.py** file. Every time we run the deploy file, a new contract is created. Since **SimpleStorage** acts like an array we can choose which deployed contract we want to call the **retrieve** function. Currently, it's set to the latest one, but it might be any other. Just go to the **map.json** file and choose the index which you prefer. Remember to deploy a contract a few times if you want to choose.
 
 ```python
 def read_contracts():
