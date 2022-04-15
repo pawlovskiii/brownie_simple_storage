@@ -229,8 +229,10 @@ You must create a file named **.env** to put there your environment variables (n
 
 1. Also if you prefer working with TestNet I suggest using [MetaMask](https://metamask.io/), after creating the wallet, go straight to the account and export the private key. It has to be in hexadecimal version, so we put **0x** at the beginning (only when you use TestNet, in ganache is right away, so check it carefully).
 
+Below I put the private key from the first wallet, that you're gonna see when you try to run your local blockchain within ganache-cli with the **--deterministic** flag. So feel free to copy & paste it. Later, replace it with the exported private key from your MetaMask if you want to work with Rinkeby.
+
 ```
-export PRIVATE_KEY=0x...
+export PRIVATE_KEY=0x4f3edf983ac636a65a842ce7c78d9aa706d3b113bce9c46f30d7d21715b23b1d
 ```
 
 2. Firstly you need an account on [Infura](https://infura.io/). After that, you create a new project and type its ID.
@@ -253,7 +255,7 @@ $ cd brownie_simple_storage
 # Install ganache-cli
 $ npm install -g ganache-cli
 
-# Install dependencies
+# Install dependencies (not required)
 $ npm install
 ```
 
